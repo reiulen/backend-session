@@ -17,14 +17,6 @@ class UserSeeder extends Seeder
     {
         \App\Models\User::insert([
             [
-                'nis' => '192010568',
-                'nama' => 'Reihan Andika AM',
-                'email' => 'reiandika10@gmail.com',
-                'avatar' => 'upload/avatar/user.png',
-                'role' => 'Admin',
-                'password' => Hash::make('Session2021')
-            ],
-            [
                 'nis' => '192010541',
                 'nama' => '192010541',
                 'email' => '192010541@gmail.com',
