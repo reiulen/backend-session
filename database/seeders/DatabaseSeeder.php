@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Kategori;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -14,7 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Kategori::create([
+        $this->call([
+            UserSeeder::class,
+        ]);
+        Kategori::create([
             'kategori' => 'Desain Grafis'
         ]);
     }
