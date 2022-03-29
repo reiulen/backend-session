@@ -81,9 +81,10 @@ class PostController extends Controller
             'thumbnail' => $request->file('thumbnail')->store('upload/thumbnail'),
             'tag' => $request->tag,
             'isi' => $request->content,
+            'status' => $request->status
         ]);
         return redirect('post')->with(['alert' => 'success',
-                                       'pesan' => 'Post berhasil ditambahkan'                     
+                                       'pesan' => 'Post berhasil ditambahkan'
                                       ]);
     }
 
@@ -155,7 +156,7 @@ class PostController extends Controller
             'isi' => $request->content,
         ]);
         return redirect('post')->with(['alert' => 'success',
-                                       'pesan' => 'Post berhasil diedit'                     
+                                       'pesan' => 'Post berhasil diedit'
                                       ]);
     }
 
