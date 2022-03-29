@@ -23,6 +23,7 @@ class CreatePostsTable extends Migration
             $table->string('tag')->default('null');
             $table->enum('status', ['Publish', 'Pending', 'Draft']);
             $table->text('isi');
+            $table->integer('view')->default(0);
             $table->timestamps();
         });
     }
