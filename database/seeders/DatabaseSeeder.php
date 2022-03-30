@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('admin')
         ]);
         Kategori::create([
+            'slug' => 'desain-grafis',
             'kategori' => 'Desain Grafis'
         ]);
     }
